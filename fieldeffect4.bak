@@ -1,0 +1,499 @@
+EESchema Schematic File Version 4
+LIBS:fieldeffect4-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5CA6DB76
+P 4250 1750
+F 0 "Q?" H 4455 1796 50  0000 L CNN
+F 1 "Q_NMOS_GDS" H 4455 1705 50  0000 L CNN
+F 2 "" H 4450 1850 50  0001 C CNN
+F 3 "~" H 4250 1750 50  0001 C CNN
+	1    4250 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5CA6DCC7
+P 5100 1750
+F 0 "Q?" H 5305 1796 50  0000 L CNN
+F 1 "Q_NMOS_GDS" H 5305 1705 50  0000 L CNN
+F 2 "" H 5300 1850 50  0001 C CNN
+F 3 "~" H 5100 1750 50  0001 C CNN
+	1    5100 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5CA6DF56
+P 5950 1750
+F 0 "Q?" H 6155 1796 50  0000 L CNN
+F 1 "Q_NMOS_GDS" H 6155 1705 50  0000 L CNN
+F 2 "" H 6150 1850 50  0001 C CNN
+F 3 "~" H 5950 1750 50  0001 C CNN
+	1    5950 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5CA6E835
+P 6800 1750
+F 0 "Q?" H 7005 1796 50  0000 L CNN
+F 1 "Q_NMOS_GDS" H 7005 1705 50  0000 L CNN
+F 2 "" H 7000 1850 50  0001 C CNN
+F 3 "~" H 6800 1750 50  0001 C CNN
+	1    6800 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_FET:MCP1416 U?
+U 1 1 5CA6F467
+P 4050 2600
+F 0 "U?" V 4146 2259 50  0000 R CNN
+F 1 "MCP1416" V 4055 2259 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 4050 2200 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20002092F.pdf" H 3850 2850 50  0001 C CNN
+	1    4050 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Driver_FET:MCP1416 U?
+U 1 1 5CA6FD87
+P 4900 2600
+F 0 "U?" V 4996 2259 50  0000 R CNN
+F 1 "MCP1416" V 4905 2259 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 4900 2200 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20002092F.pdf" H 4700 2850 50  0001 C CNN
+	1    4900 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Driver_FET:MCP1416 U?
+U 1 1 5CA717A0
+P 5750 2600
+F 0 "U?" V 5846 2259 50  0000 R CNN
+F 1 "MCP1416" V 5755 2259 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5750 2200 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20002092F.pdf" H 5550 2850 50  0001 C CNN
+	1    5750 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6600 1750 6600 2200
+Wire Wire Line
+	5750 1750 5750 2200
+Wire Wire Line
+	4900 1750 4900 2200
+Wire Wire Line
+	4050 1750 4050 2200
+$Comp
+L power:+5V #PWR?
+U 1 1 5CA7EC59
+P 6300 2900
+F 0 "#PWR?" H 6300 2750 50  0001 C CNN
+F 1 "+5V" H 6315 3073 50  0000 C CNN
+F 2 "" H 6300 2900 50  0001 C CNN
+F 3 "" H 6300 2900 50  0001 C CNN
+	1    6300 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5CA84A0E
+P 6150 2850
+F 0 "C?" H 6058 2804 50  0000 R CNN
+F 1 "C_Small" H 6058 2895 50  0000 R CNN
+F 2 "" H 6150 2850 50  0001 C CNN
+F 3 "~" H 6150 2850 50  0001 C CNN
+	1    6150 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5CA84A14
+P 6150 3150
+F 0 "C?" H 6058 3196 50  0000 R CNN
+F 1 "C_Small" H 6058 3105 50  0000 R CNN
+F 2 "" H 6150 3150 50  0001 C CNN
+F 3 "~" H 6150 3150 50  0001 C CNN
+	1    6150 3150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 2600 6150 2600
+Wire Wire Line
+	6150 2600 6150 2750
+Wire Wire Line
+	6150 2950 6150 3050
+Wire Wire Line
+	6150 3250 6150 3350
+$Comp
+L power:GND #PWR?
+U 1 1 5CA84A1E
+P 6150 2250
+F 0 "#PWR?" H 6150 2000 50  0001 C CNN
+F 1 "GND" H 6155 2077 50  0000 C CNN
+F 2 "" H 6150 2250 50  0001 C CNN
+F 3 "" H 6150 2250 50  0001 C CNN
+	1    6150 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5CA84A24
+P 6150 3350
+F 0 "#PWR?" H 6150 3200 50  0001 C CNN
+F 1 "+5V" H 6165 3523 50  0000 C CNN
+F 2 "" H 6150 3350 50  0001 C CNN
+F 3 "" H 6150 3350 50  0001 C CNN
+	1    6150 3350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6150 2600 6150 2400
+Connection ~ 6150 2600
+Wire Wire Line
+	6300 2600 6300 2900
+$Comp
+L Driver_FET:MCP1416 U?
+U 1 1 5CA73390
+P 6600 2600
+F 0 "U?" V 6696 2259 50  0000 R CNN
+F 1 "MCP1416" V 6605 2259 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 6600 2200 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20002092F.pdf" H 6400 2850 50  0001 C CNN
+	1    6600 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5CA772D7
+P 7000 2850
+F 0 "C?" H 6908 2804 50  0000 R CNN
+F 1 "C_Small" H 6908 2895 50  0000 R CNN
+F 2 "" H 7000 2850 50  0001 C CNN
+F 3 "~" H 7000 2850 50  0001 C CNN
+	1    7000 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5CA7779E
+P 7000 3150
+F 0 "C?" H 6908 3196 50  0000 R CNN
+F 1 "C_Small" H 6908 3105 50  0000 R CNN
+F 2 "" H 7000 3150 50  0001 C CNN
+F 3 "~" H 7000 3150 50  0001 C CNN
+	1    7000 3150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 2600 7000 2600
+Wire Wire Line
+	7000 2600 7000 2750
+Connection ~ 7000 2600
+Wire Wire Line
+	7000 2600 7000 2400
+Wire Wire Line
+	7000 2950 7000 3050
+Wire Wire Line
+	7000 3250 7000 3350
+$Comp
+L power:GND #PWR?
+U 1 1 5CA817D8
+P 7000 2250
+F 0 "#PWR?" H 7000 2000 50  0001 C CNN
+F 1 "GND" H 7005 2077 50  0000 C CNN
+F 2 "" H 7000 2250 50  0001 C CNN
+F 3 "" H 7000 2250 50  0001 C CNN
+	1    7000 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5CA824CF
+P 7000 3350
+F 0 "#PWR?" H 7000 3200 50  0001 C CNN
+F 1 "+5V" H 7015 3523 50  0000 C CNN
+F 2 "" H 7000 3350 50  0001 C CNN
+F 3 "" H 7000 3350 50  0001 C CNN
+	1    7000 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5CA89B12
+P 5300 2850
+F 0 "C?" H 5208 2804 50  0000 R CNN
+F 1 "C_Small" H 5208 2895 50  0000 R CNN
+F 2 "" H 5300 2850 50  0001 C CNN
+F 3 "~" H 5300 2850 50  0001 C CNN
+	1    5300 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5CA89B18
+P 5300 3150
+F 0 "C?" H 5208 3196 50  0000 R CNN
+F 1 "C_Small" H 5208 3105 50  0000 R CNN
+F 2 "" H 5300 3150 50  0001 C CNN
+F 3 "~" H 5300 3150 50  0001 C CNN
+	1    5300 3150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 2600 5300 2600
+Wire Wire Line
+	5300 2600 5300 2750
+Connection ~ 5300 2600
+Wire Wire Line
+	5300 2600 5300 2400
+Wire Wire Line
+	5300 2950 5300 3050
+Wire Wire Line
+	5300 3250 5300 3350
+$Comp
+L power:GND #PWR?
+U 1 1 5CA89B24
+P 5300 2250
+F 0 "#PWR?" H 5300 2000 50  0001 C CNN
+F 1 "GND" H 5305 2077 50  0000 C CNN
+F 2 "" H 5300 2250 50  0001 C CNN
+F 3 "" H 5300 2250 50  0001 C CNN
+	1    5300 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5CA89B2A
+P 5300 3350
+F 0 "#PWR?" H 5300 3200 50  0001 C CNN
+F 1 "+5V" H 5315 3523 50  0000 C CNN
+F 2 "" H 5300 3350 50  0001 C CNN
+F 3 "" H 5300 3350 50  0001 C CNN
+	1    5300 3350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5450 2600 5450 2900
+$Comp
+L power:+5V #PWR?
+U 1 1 5CA8C8D5
+P 5450 2900
+F 0 "#PWR?" H 5450 2750 50  0001 C CNN
+F 1 "+5V" H 5465 3073 50  0000 C CNN
+F 2 "" H 5450 2900 50  0001 C CNN
+F 3 "" H 5450 2900 50  0001 C CNN
+	1    5450 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5CA8D4BF
+P 4450 2850
+F 0 "C?" H 4358 2804 50  0000 R CNN
+F 1 "C_Small" H 4358 2895 50  0000 R CNN
+F 2 "" H 4450 2850 50  0001 C CNN
+F 3 "~" H 4450 2850 50  0001 C CNN
+	1    4450 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5CA8D4C5
+P 4450 3150
+F 0 "C?" H 4358 3196 50  0000 R CNN
+F 1 "C_Small" H 4358 3105 50  0000 R CNN
+F 2 "" H 4450 3150 50  0001 C CNN
+F 3 "~" H 4450 3150 50  0001 C CNN
+	1    4450 3150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 2600 4450 2600
+Wire Wire Line
+	4450 2600 4450 2750
+Connection ~ 4450 2600
+Wire Wire Line
+	4450 2600 4450 2400
+Wire Wire Line
+	4450 2950 4450 3050
+Wire Wire Line
+	4450 3250 4450 3350
+$Comp
+L power:GND #PWR?
+U 1 1 5CA8D4D1
+P 4450 2250
+F 0 "#PWR?" H 4450 2000 50  0001 C CNN
+F 1 "GND" H 4455 2077 50  0000 C CNN
+F 2 "" H 4450 2250 50  0001 C CNN
+F 3 "" H 4450 2250 50  0001 C CNN
+	1    4450 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5CA8D4D7
+P 4450 3350
+F 0 "#PWR?" H 4450 3200 50  0001 C CNN
+F 1 "+5V" H 4465 3523 50  0000 C CNN
+F 2 "" H 4450 3350 50  0001 C CNN
+F 3 "" H 4450 3350 50  0001 C CNN
+	1    4450 3350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4600 2600 4600 2900
+$Comp
+L power:+5V #PWR?
+U 1 1 5CA90814
+P 4600 2900
+F 0 "#PWR?" H 4600 2750 50  0001 C CNN
+F 1 "+5V" H 4615 3073 50  0000 C CNN
+F 2 "" H 4600 2900 50  0001 C CNN
+F 3 "" H 4600 2900 50  0001 C CNN
+	1    4600 2900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3750 2600 3750 2900
+$Comp
+L power:+5V #PWR?
+U 1 1 5CA93350
+P 3750 2900
+F 0 "#PWR?" H 3750 2750 50  0001 C CNN
+F 1 "+5V" H 3765 3073 50  0000 C CNN
+F 2 "" H 3750 2900 50  0001 C CNN
+F 3 "" H 3750 2900 50  0001 C CNN
+	1    3750 2900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4050 2900 4050 3100
+Wire Wire Line
+	4900 2900 4900 3100
+Wire Wire Line
+	5750 2900 5750 3100
+Wire Wire Line
+	6600 2900 6600 3100
+Wire Wire Line
+	4350 1950 4350 2400
+Wire Wire Line
+	4350 2400 4450 2400
+Connection ~ 4450 2400
+Wire Wire Line
+	4450 2400 4450 2250
+Wire Wire Line
+	5200 1950 5200 2400
+Wire Wire Line
+	5200 2400 5300 2400
+Connection ~ 5300 2400
+Wire Wire Line
+	5300 2400 5300 2250
+Wire Wire Line
+	6050 1950 6050 2400
+Wire Wire Line
+	6050 2400 6150 2400
+Connection ~ 6150 2400
+Wire Wire Line
+	6150 2400 6150 2250
+Wire Wire Line
+	6900 1950 6900 2400
+Wire Wire Line
+	6900 2400 7000 2400
+Connection ~ 7000 2400
+Wire Wire Line
+	7000 2400 7000 2250
+Wire Wire Line
+	6050 1550 6050 1350
+Wire Wire Line
+	6900 1550 6900 1350
+Wire Wire Line
+	5200 1550 5200 1350
+$Comp
+L Device:D_Small D?
+U 1 1 5CACACB6
+P 4200 1350
+F 0 "D?" H 4200 1555 50  0000 C CNN
+F 1 "D_Small" H 4200 1464 50  0000 C CNN
+F 2 "" V 4200 1350 50  0001 C CNN
+F 3 "~" V 4200 1350 50  0001 C CNN
+	1    4200 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D?
+U 1 1 5CAEE28D
+P 5050 1350
+F 0 "D?" H 5050 1555 50  0000 C CNN
+F 1 "D_Small" H 5050 1464 50  0000 C CNN
+F 2 "" V 5050 1350 50  0001 C CNN
+F 3 "~" V 5050 1350 50  0001 C CNN
+	1    5050 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D?
+U 1 1 5CAF4004
+P 5900 1350
+F 0 "D?" H 5900 1555 50  0000 C CNN
+F 1 "D_Small" H 5900 1464 50  0000 C CNN
+F 2 "" V 5900 1350 50  0001 C CNN
+F 3 "~" V 5900 1350 50  0001 C CNN
+	1    5900 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D?
+U 1 1 5CAF6BC5
+P 6750 1350
+F 0 "D?" H 6750 1555 50  0000 C CNN
+F 1 "D_Small" H 6750 1464 50  0000 C CNN
+F 2 "" V 6750 1350 50  0001 C CNN
+F 3 "~" V 6750 1350 50  0001 C CNN
+	1    6750 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 1350 6900 1350
+Connection ~ 6900 1350
+Wire Wire Line
+	6900 1350 6900 1150
+Wire Wire Line
+	6000 1350 6050 1350
+Connection ~ 6050 1350
+Wire Wire Line
+	6050 1350 6050 1150
+Wire Wire Line
+	5150 1350 5200 1350
+Connection ~ 5200 1350
+Wire Wire Line
+	5200 1350 5200 1150
+Wire Wire Line
+	4350 1150 4350 1350
+Wire Wire Line
+	4300 1350 4350 1350
+Connection ~ 4350 1350
+Wire Wire Line
+	4350 1350 4350 1550
+Wire Wire Line
+	6650 1350 6450 1350
+Wire Wire Line
+	5800 1350 5550 1350
+Wire Wire Line
+	4700 1350 4950 1350
+$EndSCHEMATC
