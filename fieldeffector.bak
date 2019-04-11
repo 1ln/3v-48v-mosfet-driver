@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:fieldeffect4-cache
+LIBS:fieldeffector-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -751,4 +751,48 @@ Wire Wire Line
 Connection ~ 7000 3000
 Wire Wire Line
 	7000 3000 7000 3050
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5CB01E0B
+P 1800 3400
+F 0 "H3" H 1900 3446 50  0000 L CNN
+F 1 "MountingHole" H 1900 3355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1800 3400 50  0001 C CNN
+F 3 "~" H 1800 3400 50  0001 C CNN
+	1    1800 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5CB023E2
+P 1800 3100
+F 0 "H4" H 1900 3146 50  0000 L CNN
+F 1 "MountingHole" H 1900 3055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1800 3100 50  0001 C CNN
+F 3 "~" H 1800 3100 50  0001 C CNN
+	1    1800 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5CB07684
+P 1450 3400
+F 0 "H2" H 1550 3446 50  0000 L CNN
+F 1 "MountingHole" H 1550 3355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1450 3400 50  0001 C CNN
+F 3 "~" H 1450 3400 50  0001 C CNN
+	1    1450 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5CB1AA81
+P 1450 3100
+F 0 "H1" H 1550 3146 50  0000 L CNN
+F 1 "MountingHole" H 1550 3055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1450 3100 50  0001 C CNN
+F 3 "~" H 1450 3100 50  0001 C CNN
+	1    1450 3100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
