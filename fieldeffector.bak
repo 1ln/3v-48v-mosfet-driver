@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:fieldeffector-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -365,7 +365,7 @@ U 1 1 5CACACB6
 P 4200 1350
 F 0 "D1" H 4200 1555 50  0000 C CNN
 F 1 "D_Small" H 4200 1464 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123F" V 4200 1350 50  0001 C CNN
+F 2 "Diode_SMD:D_SMB" V 4200 1350 50  0001 C CNN
 F 3 "~" V 4200 1350 50  0001 C CNN
 	1    4200 1350
 	1    0    0    -1  
@@ -376,7 +376,7 @@ U 1 1 5CAEE28D
 P 5050 1350
 F 0 "D2" H 5050 1555 50  0000 C CNN
 F 1 "D_Small" H 5050 1464 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123F" V 5050 1350 50  0001 C CNN
+F 2 "Diode_SMD:D_SMB" V 5050 1350 50  0001 C CNN
 F 3 "~" V 5050 1350 50  0001 C CNN
 	1    5050 1350
 	1    0    0    -1  
@@ -387,7 +387,7 @@ U 1 1 5CAF4004
 P 5900 1350
 F 0 "D3" H 5900 1555 50  0000 C CNN
 F 1 "D_Small" H 5900 1464 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123F" V 5900 1350 50  0001 C CNN
+F 2 "Diode_SMD:D_SMB" V 5900 1350 50  0001 C CNN
 F 3 "~" V 5900 1350 50  0001 C CNN
 	1    5900 1350
 	1    0    0    -1  
@@ -398,7 +398,7 @@ U 1 1 5CAF6BC5
 P 6750 1350
 F 0 "D4" H 6750 1555 50  0000 C CNN
 F 1 "D_Small" H 6750 1464 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123F" V 6750 1350 50  0001 C CNN
+F 2 "Diode_SMD:D_SMB" V 6750 1350 50  0001 C CNN
 F 3 "~" V 6750 1350 50  0001 C CNN
 	1    6750 1350
 	1    0    0    -1  
@@ -473,7 +473,7 @@ U 1 1 5CB1A62C
 P 2400 1000
 F 0 "J2" H 2320 675 50  0000 C CNN
 F 1 "Conn_01x02" H 2320 766 50  0000 C CNN
-F 2 "Sockets_MOLEX_KK-System:Socket_MOLEX-KK-RM3-96mm_Lock_2pin_straight" H 2400 1000 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 2400 1000 50  0001 C CNN
 F 3 "~" H 2400 1000 50  0001 C CNN
 	1    2400 1000
 	-1   0    0    1   
@@ -484,7 +484,7 @@ U 1 1 5CB28161
 P 2400 1250
 F 0 "J3" H 2320 925 50  0000 C CNN
 F 1 "Conn_01x02" H 2320 1016 50  0000 C CNN
-F 2 "Sockets_MOLEX_KK-System:Socket_MOLEX-KK-RM3-96mm_Lock_2pin_straight" H 2400 1250 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 2400 1250 50  0001 C CNN
 F 3 "~" H 2400 1250 50  0001 C CNN
 	1    2400 1250
 	-1   0    0    1   
@@ -495,39 +495,13 @@ U 1 1 5CB3135E
 P 2400 750
 F 0 "J1" H 2320 425 50  0000 C CNN
 F 1 "Conn_01x02" H 2320 516 50  0000 C CNN
-F 2 "Sockets_MOLEX_KK-System:Socket_MOLEX-KK-RM3-96mm_Lock_2pin_straight" H 2400 750 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 2400 750 50  0001 C CNN
 F 3 "~" H 2400 750 50  0001 C CNN
 	1    2400 750 
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3450 1000 3450 650 
-Wire Wire Line
-	3450 650  2600 650 
-Wire Wire Line
-	2950 1050 2950 900 
-Wire Wire Line
-	2950 900  2600 900 
-Wire Wire Line
-	2950 1050 6050 1050
-Wire Wire Line
-	2600 1100 2600 1150
-Wire Wire Line
-	2600 1100 5200 1100
-Wire Wire Line
-	3450 1400 3450 1150
-Wire Wire Line
-	2800 750  2800 1000
-Wire Wire Line
-	2600 1000 2800 1000
-Connection ~ 2800 1000
-Wire Wire Line
-	2800 1000 2800 1250
-Wire Wire Line
-	2600 750  2800 750 
-Wire Wire Line
-	2600 1250 2800 1250
-Connection ~ 2800 1250
+	3450 1000 3450 750 
 $Comp
 L power:+48V #PWR0114
 U 1 1 5CB64D2C
@@ -623,31 +597,6 @@ F 3 "" H 7350 3750 50  0001 C CNN
 	1    7350 3750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2800 1250 2800 1500
-Wire Wire Line
-	2600 1500 2800 1500
-Connection ~ 2800 1500
-Wire Wire Line
-	2800 1500 2800 1800
-$Comp
-L Connector_Generic:Conn_01x02 J5
-U 1 1 5CC59094
-P 2400 1700
-F 0 "J5" H 2320 1917 50  0000 C CNN
-F 1 "Conn_01x02" H 2320 1826 50  0000 C CNN
-F 2 "Sockets_MOLEX_KK-System:Socket_MOLEX-KK-RM3-96mm_Lock_2pin_straight" H 2400 1700 50  0001 C CNN
-F 3 "~" H 2400 1700 50  0001 C CNN
-	1    2400 1700
-	-1   0    0    -1  
-$EndComp
-Connection ~ 2800 1800
-Wire Wire Line
-	2800 1800 2800 2300
-Wire Wire Line
-	2600 1800 2800 1800
-Wire Wire Line
-	2600 1700 3350 1700
 $Comp
 L power:GND #PWR0116
 U 1 1 5CC80E2A
@@ -673,9 +622,6 @@ $EndComp
 Wire Wire Line
 	3150 2250 3350 2250
 Wire Wire Line
-	3350 2250 3350 1700
-Connection ~ 3350 1700
-Wire Wire Line
 	3350 1700 3600 1700
 Wire Wire Line
 	3050 2250 3050 2750
@@ -684,19 +630,6 @@ Wire Wire Line
 Connection ~ 3750 2750
 Wire Wire Line
 	3750 2750 3750 3450
-$Comp
-L Connector_Generic:Conn_01x02 J4
-U 1 1 5CB2EA20
-P 2400 1500
-F 0 "J4" H 2320 1717 50  0000 C CNN
-F 1 "Conn_01x02" H 2320 1626 50  0000 C CNN
-F 2 "Sockets_MOLEX_KK-System:Socket_MOLEX-KK-RM3-96mm_Lock_2pin_straight" H 2400 1500 50  0001 C CNN
-F 3 "~" H 2400 1500 50  0001 C CNN
-	1    2400 1500
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2600 1400 3450 1400
 Wire Wire Line
 	4450 3250 4450 3300
 $Comp
@@ -790,9 +723,91 @@ U 1 1 5CBA744D
 P 1800 3450
 F 0 "H3" H 1900 3501 50  0000 L CNN
 F 1 "MountingHole_Pad" H 1900 3410 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 1800 3450 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 1800 3450 50  0001 C CNN
 F 3 "~" H 1800 3450 50  0001 C CNN
 	1    1800 3450
+	1    0    0    -1  
+$EndComp
+Connection ~ 2800 1400
+Wire Wire Line
+	2600 1150 2800 1150
+Connection ~ 2800 1150
+Wire Wire Line
+	2800 1150 2800 1400
+Wire Wire Line
+	2600 900  2800 900 
+Connection ~ 2800 900 
+Wire Wire Line
+	2800 900  2800 1150
+Wire Wire Line
+	2800 650  2600 650 
+Wire Wire Line
+	2800 650  2800 900 
+Wire Wire Line
+	2600 750  3450 750 
+Wire Wire Line
+	2600 1000 2950 1000
+Wire Wire Line
+	2950 1000 2950 1050
+Wire Wire Line
+	2600 1400 2800 1400
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 5CB2EA20
+P 2400 1500
+F 0 "J4" H 2320 1717 50  0000 C CNN
+F 1 "Conn_01x02" H 2320 1626 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 2400 1500 50  0001 C CNN
+F 3 "~" H 2400 1500 50  0001 C CNN
+	1    2400 1500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2950 1050 6050 1050
+Wire Wire Line
+	2600 1250 3100 1250
+Wire Wire Line
+	3100 1250 3100 1100
+Wire Wire Line
+	3100 1100 5200 1100
+Wire Wire Line
+	2600 1500 3450 1500
+Wire Wire Line
+	3450 1150 3450 1500
+Wire Wire Line
+	3350 1700 3350 2250
+Wire Wire Line
+	2800 1400 2800 1800
+Connection ~ 2800 1800
+Wire Wire Line
+	2800 1800 2800 2300
+Wire Wire Line
+	2600 1800 2800 1800
+$Comp
+L Connector_Generic:Conn_01x02 J5
+U 1 1 5CC59094
+P 2400 1700
+F 0 "J5" H 2320 1917 50  0000 C CNN
+F 1 "Conn_01x02" H 2320 1826 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 2400 1700 50  0001 C CNN
+F 3 "~" H 2400 1700 50  0001 C CNN
+	1    2400 1700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 1700 3350 1700
+Connection ~ 3350 1700
+Wire Wire Line
+	1800 3550 1800 3750
+$Comp
+L power:GND #PWR?
+U 1 1 5D02EA66
+P 2850 3350
+F 0 "#PWR?" H 2850 3100 50  0001 C CNN
+F 1 "GND" V 2855 3222 50  0000 R CNN
+F 2 "" H 2850 3350 50  0001 C CNN
+F 3 "" H 2850 3350 50  0001 C CNN
+	1    2850 3350
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
