@@ -1,0 +1,19 @@
+Fieldeffector pcb
+
+Hardware Design: 
+
+Dan Olson 
+Copyright 2019
+
+This board is currently is testing phase, use at your own risk.
+
+This is a board designed to control n-channel power mosfets from a 3.3v microcontrollers using the mcp1416. 
+
+Typical uses:
+
+Solenoid control.
+
+Features:
+
+Four channels in two port configuration for mcu boards that have the same pinout.
+Ability to also use 5v logic.
