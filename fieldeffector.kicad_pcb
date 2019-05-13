@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 8)
+    (drawings 14)
     (tracks 33)
     (zones 0)
     (modules 34)
@@ -60,7 +60,7 @@
     (pad_to_mask_clearance 0.051)
     (solder_mask_min_width 0.25)
     (aux_axis_origin 73.4 88.065)
-    (grid_origin 96.625 93.265)
+    (grid_origin 166.65 110.265)
     (visible_elements FFFFFF7F)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
@@ -1602,6 +1602,16 @@
     )
   )
 
+  (gr_circle (center 151.05 104.074381) (end 150.368033 104.474381) (layer F.SilkS) (width 0.15) (tstamp 5CDBF274))
+  (gr_circle (center 151.05 106.346967) (end 150.55 105.346967) (layer F.SilkS) (width 0.15) (tstamp 5CDBF273))
+  (gr_circle (center 151.05 111.255619) (end 151.45 111.937586) (layer F.SilkS) (width 0.15) (tstamp 5CDBF1D9))
+  (gr_circle (center 151.05 108.983033) (end 151.55 109.983033) (layer F.SilkS) (width 0.15) (tstamp 5CDBF1B6))
+  (gr_text "Fieldeffector\n\n" (at 154.45 107.665 90) (layer F.SilkS) (tstamp 5CDBF08D)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (gr_text "Spiderbox\n" (at 148.45 107.465 90) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
   (gr_line (start 153.65 132.065) (end 73.4 132.065) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 157.65 88.065) (end 157.65 128.065) (layer Edge.Cuts) (width 0.15))
   (gr_arc (start 153.65 128.065) (end 153.65 132.065) (angle -90) (layer Edge.Cuts) (width 0.15))
